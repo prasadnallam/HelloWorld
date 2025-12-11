@@ -4,12 +4,17 @@ pipeline {
     stages {
         stage('Get Code') {
             steps {
-                echo 'Hello World'
+                echo 'Get code from Githutb here'
             }
         }
         stage('Build Code') {
             steps {
-                echo 'Hello World'
+                echo 'Add step to build the code'
+            }
+        }
+       stage('Scanning ') {
+            steps {
+                echo 'Add step to scan'
             }
         }
         stage('Deploy') {
