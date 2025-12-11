@@ -17,7 +17,12 @@ pipeline {
                 echo 'Add step to scan'
             }
         }
-        stage('Deploy') {
+          stage('Securityscan') {
+            steps {
+                echo 'Get code from Githutb here'
+            }
+        }       
+      stage('Deploy') {
             steps {
                 echo 'Hello World'
             }
